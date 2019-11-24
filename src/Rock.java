@@ -31,6 +31,10 @@ public class Rock {
 
         System.out.println("Computer's play is: " + computerPlay);
 
+        while (!personPlay.equals("rock") && !personPlay.equals("paper") && !personPlay.equals("scissors")) {
+            System.out.println("Invalid play, try again.");
+            personPlay = scan.next();
+
         if (personPlay.equals(computerPlay)) {
             System.out.println("It's a tie!");
         } else if (personPlay.equals("rock")) {
@@ -48,7 +52,7 @@ public class Rock {
                 System.out.println("scissor cuts paper. You win!");
             else if (computerPlay.equals("rock"))
                 System.out.println("rock breaks scissors. You lose!");
-          //  else if (personPlay != System.out.println("Sorry, that's an invalid move!");
+            }
         }
     }
 }
